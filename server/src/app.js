@@ -44,6 +44,19 @@ export function createApp(options) {
     res.json({ ok: true, service: "finance-backend" });
   });
 
+  app.get("/", (req, res) => {
+    res.json({
+      service: "finance-backend",
+      message: "REST API is running. There is no HTML homepage at this URL.",
+      try: {
+        health: "/health",
+        login: "POST /api/auth/login",
+        dashboardSummary: "GET /api/dashboard/summary (Bearer token)",
+      },
+      docs: "See README.md in the repository for full routes and setup.",
+    });
+  });
+
   app.use("/api/auth", authLimiter, createAuthRoutes(jwtSecret));
   app.use("/api/users", apiLimiter, createUserRoutes(jwtSecret));
   app.use("/api/records", apiLimiter, createRecordRoutes(jwtSecret));
