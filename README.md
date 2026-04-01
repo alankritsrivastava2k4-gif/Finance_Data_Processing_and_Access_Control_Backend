@@ -4,6 +4,13 @@ This project is a small **finance dashboard** system: users sign in, see income/
 
 **Stack:** MongoDB · Express · React (Vite) · Node.js — the usual **MERN** setup.
 
+<img width="940" height="870" alt="image" src="https://github.com/user-attachments/assets/910edfcb-2816-4258-8f1e-c370a88f589e" />
+<img width="925" height="867" alt="image" src="https://github.com/user-attachments/assets/4f5ff01b-f26e-40a1-bfe9-89bf2dd14789" />
+<img width="928" height="863" alt="image" src="https://github.com/user-attachments/assets/4da6ed0b-a5a6-469b-8eb0-90d929489980" />
+
+
+
+
 ---
 
 ## What’s included
